@@ -26,7 +26,10 @@ export default function RootLayout({
         className={`${PoppinsFont} antialiased min-h-screen relative`}
       >
         <Navbar/>
+        <main className="min-h-screen pt-16 w-full">
+
         {children}
+        </main>
       </body>
     </html>
   );
