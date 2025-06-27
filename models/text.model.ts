@@ -1,4 +1,4 @@
-import mongoose, { model } from "mongoose";
+import mongoose, { model,models } from "mongoose";
 
 const TextFileSchema = new mongoose.Schema({
     text:{
@@ -16,4 +16,4 @@ const TextFileSchema = new mongoose.Schema({
     }
 })
 
-export const  TextFile = model("TextFile",TextFileSchema);
+export const  TextFile = models.TextFile ||model("TextFile",TextFileSchema);

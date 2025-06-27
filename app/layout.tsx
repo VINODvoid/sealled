@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-
+import { ToastContainer } from "react-toastify";
 const PoppinsFont = Poppins({
   weight: ["500"], 
   subsets: ["latin"]
@@ -30,6 +30,7 @@ export default function RootLayout({
 
         {children}
         </main>
+        <ToastContainer/>
       </body>
     </html>
   );
